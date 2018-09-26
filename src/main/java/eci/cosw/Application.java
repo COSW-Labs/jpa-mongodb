@@ -43,7 +43,31 @@ public class Application implements CommandLineRunner {
         //Creacion de ToDo's de prueba
         todoRepository.deleteAll();
 
-        todoRepository.save(new Todo("Tarea 1", 1, ));
+        todoRepository.save(new Todo("Tarea 23", 3, Date(2017+1900,9,26,12,0,0), "Fabian", "Hecho"));
+        todoRepository.save(new Todo("Tarea 13", 7, Date(2017+1900,9,26,12,0,0), "Daniel", "Hecho"));
+        todoRepository.save(new Todo("Tarea 6", 5, Date(2017+1900,9,26,12,0,0), "Santiago", "Hecho"));
+        todoRepository.save(new Todo("Tarea 78", 9, Date(2017+1900,9,26,12,0,0), "Carolina", "Pendiente"));
+        todoRepository.save(new Todo("Tarea 2", 2, Date(2018+1900,10,21,12,0,0), "Pedro", "Pendiente"));
+        todoRepository.save(new Todo("Tarea 45", 6, Date(2018+1900,10,15,12,0,0), "Juan", "Pendiente"));
+        todoRepository.save(new Todo("Tarea 6", 4, Date(2018+1900,10,11,12,0,0), "Mario", "Pendiente"));
+        todoRepository.save(new Todo("Tarea 4", 10, Date(2018+1900,10,23,12,0,0), "Carlos", "Proceso"));
+        todoRepository.save(new Todo("Tarea 8", 3, Date(2018+1900,10,4,12,0,0), "David", "Pendiente"));
+        todoRepository.save(new Todo("Tarea 10", 6, Date(2018+1900,9,26,12,0,0), "Felipe", "Pendiente"));
+        todoRepository.save(new Todo("Tarea 17", 4, Date(2018+1900,9,26,12,0,0), "David", "Pendiente"));
+        todoRepository.save(new Todo("Tarea 14", 9, Date(2018+1900,9,26,12,0,0), "Juan", "Proceso"));
+        todoRepository.save(new Todo("Tarea 24", 4, Date(2018+1900,9,26,12,0,0), "Fabian", "Hecho"));
+        todoRepository.save(new Todo("Tarea de mas de 30 caracteres!!", 7, Date(2018+1900,9,26,12,0,0), "Carolina", "Pendiente"));
+        todoRepository.save(new Todo("Tarea 34", 2, Date(2018+1900,9,26,12,0,0), "Daniel", "Proceso"));
+        todoRepository.save(new Todo("Tarea 154", 10, Date(2018+1900,9,26,12,0,0), "Fabian", "Hecho"));
+        todoRepository.save(new Todo("Tarea 21", 1, Date(2018+1900,9,26,12,0,0), "Fabian", "Pendiente"));
+        todoRepository.save(new Todo("Tarea 1", 9, Date(2018+1900,9,26,12,0,0), "David", "Pendiente"));
+        todoRepository.save(new Todo("Tarea 70", 3, Date(2018+1900,9,26,12,0,0), "Daniel", "Hecho"));
+        todoRepository.save(new Todo("Tarea 47", 0, Date(2018+1900,9,26,12,0,0), "Mario", "Proceso"));
+        todoRepository.save(new Todo("Tarea 186", 3, Date(2018+1900,9,26,12,0,0), "Santiago", "Hecho"));
+        todoRepository.save(new Todo("Tarea 43", 4, Date(2018+1900,9,26,12,0,0), "Fabian", "Proceso"));
+        todoRepository.save(new Todo("Tarea 164", 6, Date(2018+1900,9,26,12,0,0), "Juan", "Hecho"));
+        todoRepository.save(new Todo("Tarea 176", 5, Date(2018+1900,9,26,12,0,0), "Daniel", "Pendiente"));
+        todoRepository.save(new Todo("Tarea 29", 1, Date(2018+1900,9,26,12,0,0), "Carolina", "Proceso"));
 
         System.out.println("Customers found with findAll():");
         System.out.println("-------------------------------");
