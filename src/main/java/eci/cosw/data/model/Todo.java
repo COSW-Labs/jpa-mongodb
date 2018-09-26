@@ -8,6 +8,8 @@ public class Todo {
     private String description;
     private String priority;
     private String dueDate;
+    private String responsible;
+    private String status;
 
     public Todo() {
     }
