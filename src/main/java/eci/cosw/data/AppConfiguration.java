@@ -17,7 +17,8 @@ public class AppConfiguration {
 
     @Bean
     public MongoTemplate mongoTemplate() throws Exception {
-
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfiguration.class);
+        MongoOperations mongoOperation = (MongoOperations) applicationContext.getBean("mongoTemplate");
         MongoTemplate mongoTemplate = new MongoTemplate(mongoDbFactory());
 
         return mongoTemplate;

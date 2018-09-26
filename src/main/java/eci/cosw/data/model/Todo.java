@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Todo {
 
     private String description;
-    private String priority;
+    private int priority;
     private String dueDate;
     private String responsible;
     private String status;
@@ -14,7 +14,7 @@ public class Todo {
     public Todo() {
     }
 
-    public Todo(String description, String priority, String dueDate, String responsible, String status) {
+    public Todo(String description, int priority, String dueDate, String responsible, String status) {
         this.description = description;
         this.priority = priority;
         this.dueDate = dueDate;
@@ -41,7 +41,7 @@ public class Todo {
         return priority;
     }
 
-    public void setPriority(String priority) {
+    public void setPriority(int priority) {
         this.priority = priority;
     }
 
