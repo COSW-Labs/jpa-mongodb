@@ -4,12 +4,13 @@ import eci.cosw.data.model.Todo;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;
+import java.time.Date;
 
 public interface TodoRepository extends MongoRepository<Todo, String> {
 
-    List<Todo> findByPriority(String priority);
+    List<Todo> findByPriority(int priority);
 
-    List<Todo> findByDueDate(String dueDate);
+    List<Todo> findByDueDate(Date dueDate);
 
     List<Todo> findByResponsible(String responsible);
 

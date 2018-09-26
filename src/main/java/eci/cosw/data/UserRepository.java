@@ -1,3 +1,4 @@
+
 package eci.cosw.data;
 
 import eci.cosw.data.model.User;
@@ -7,8 +8,8 @@ import java.util.List;
 
 public interface UserRepository extends MongoRepository<User, String> {
 
-    User findById(String id);
-
-    List<User> findByName(String name);
+  User findById(String id);
+  
+  List<User> findByName(String name);
 
 }
