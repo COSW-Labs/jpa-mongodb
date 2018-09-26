@@ -4,7 +4,7 @@ import eci.cosw.data.model.Todo;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;
-import java.time.Date;
+import java.util.Date;
 
 public interface TodoRepository extends MongoRepository<Todo, String> {
 
